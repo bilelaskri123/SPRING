@@ -19,10 +19,12 @@ public class SoftSkillsController {
     private ISoftSkills softSkillsRepository ;
     @Autowired
     private IUser userRepository ;
+
     @GetMapping("/")
     public ResponseEntity findAll() {
         return ResponseEntity.ok(softSkillsRepository.findAll()) ;
     }
+
     @PostMapping("/")
     public ResponseEntity createSoftSkill(@RequestBody SoftSkills softSkills) {
         if (softSkills == null) {
@@ -38,6 +40,7 @@ public class SoftSkillsController {
         return ResponseEntity.ok(softSkillsRepository.save(softSkills));
 
     }
+
     @GetMapping("/all/{id}")
     public ResponseEntity findAllUserSkills(@PathVariable Long id) {
         if (id == null) {
