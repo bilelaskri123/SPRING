@@ -16,6 +16,7 @@ public class TechSkillsController {
     @Autowired
     private IUser user ;
 
+    @GetMapping("/")
     public ResponseEntity findAll() {
          return ResponseEntity.ok(techSkillsRepository.findAll()) ;
     }
