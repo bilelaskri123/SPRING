@@ -33,7 +33,11 @@ public class SoftSkills implements Serializable {
         this.idSkill = idSkill;
     }
 
+<<<<<<< HEAD
     public void setNomSkill(String nomSkill) {
+=======
+    public void setNomSkill(SoftEnum nomSkill) {
+>>>>>>> 4d2a3392a2394c5b9de9143008d62bf01e1c3bfb
         this.nomSkill = nomSkill;
     }
 
@@ -41,10 +45,13 @@ public class SoftSkills implements Serializable {
         this.noteAct = noteAct;
     }
 
+<<<<<<< HEAD
     public void setNoteFuture(Long noteFuture) {
         this.noteFuture = noteFuture;
     }
 
+=======
+>>>>>>> 4d2a3392a2394c5b9de9143008d62bf01e1c3bfb
     public void setUser(User user) {
         this.user = user;
     }
@@ -53,7 +60,11 @@ public class SoftSkills implements Serializable {
         return idSkill;
     }
 
+<<<<<<< HEAD
     public String getNomSkill() {
+=======
+    public SoftEnum getNomSkill() {
+>>>>>>> 4d2a3392a2394c5b9de9143008d62bf01e1c3bfb
         return nomSkill;
     }
 
@@ -61,10 +72,13 @@ public class SoftSkills implements Serializable {
         return noteAct;
     }
 
+<<<<<<< HEAD
     public Long getNoteFuture() {
         return noteFuture;
     }
 
+=======
+>>>>>>> 4d2a3392a2394c5b9de9143008d62bf01e1c3bfb
     public User getUser() {
         return user;
     }
